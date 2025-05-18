@@ -1,0 +1,125 @@
+/* .container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "navbar navbar navbar navbar"
+    "sidebar main main main"
+    "sidebar content1 content2 content3"
+    "sidebar footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.gen {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar {
+  height: 40px;
+  background: cyan;
+  grid-area: navbar;
+}
+.sidebar {
+  background: pink;
+  grid-area: sidebar;
+}
+.main {
+  height: 40px;
+  background: yellow;
+  grid-area: main;
+}
+.content1 {
+  height: 40px;
+  background: red;
+  grid-area: content1;
+}
+.content2 {
+  height: 40px;
+  background: lightgreen;
+  grid-area: content2;
+}
+.content3 {
+  height: 40px;
+  background: lightblue;
+  grid-area: content3;
+}
+.footer {
+  height: 40px;
+  background: gold;
+  grid-area: footer;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "navbar "
+      "sidebar"
+      "main" "content1" "content2" "content3"
+      "footer";
+    grid-template-columns: 1fr;
+  }
+} */
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows: auto auto 1fr auto auto auto auto;
+}
+.gen {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar {
+  background: cyan;
+}
+.sidebar {
+  background: pink;
+}
+.main {
+  background: yellow;
+}
+.content1 {
+  background: red;
+}
+.content2 {
+  background: lightgreen;
+}
+.content3 {
+  background: lightblue;
+}
+.footer {
+  background: gold;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto 1fr auto;
+  }
+
+  .navbar {
+    grid-column: 1 / span 12;
+  }
+  .sidebar {
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 3;
+  }
+  .main {
+    grid-column: 4 / span 9;
+  }
+  .content1 {
+    grid-column: 4 / span 3;
+  }
+  .content2 {
+    grid-column: 7 / span 3;
+  }
+  .content3 {
+    grid-column: 10 / span 3;
+  }
+  .footer {
+    grid-column: 4 / span 9;
+  }
+}

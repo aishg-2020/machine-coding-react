@@ -1,0 +1,134 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.tabs {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.formItems {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.inputNError {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.gap10 {
+  display: flex;
+  gap: 10px;
+}
+.errorMessage {
+  text-align: left;
+  color: red;
+  font-size: 10px;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pagination {
+  display: flex;
+  gap: 5px;
+
+  .page {
+    padding: 5px;
+    background: black;
+    cursor: pointer;
+    color: white;
+  }
+  .active {
+    padding: 5px;
+    background: grey;
+    color: white;
+  }
+}
+
+.products {
+  margin-top: 10px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  .product {
+    font-size: 10px;
+    padding: 10px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    img {
+      width: 100px;
+    }
+  }
+}
+.searchInput {
+  width: 500px;
+  padding: 5px;
+}
+.resultsContainer {
+  width: 500px;
+  border: 0.5px solid black;
+  margin: auto;
+  text-align: left;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.result {
+  display: block;
+  padding: 5px;
+  cursor: pointer;
+}
+.result:hover {
+  background: beige;
+}
+.highlighted {
+  background: blue;
+}
+.infiniteScrollContainer {
+  height: 200px;
+  overflow-y: scroll;
+  border: 1px solid black;
+  width: 300px;
+  padding: 10px;
+}
+.listItem {
+  padding: 5px;
+  border: 1px solid grey;
+  background-color: cornsilk;
+}
+.loading {
+  padding: 5px;
+}
+
+.stopwatch {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 60px;
+}
+
+.folder {
+  font-weight: 600;
+  font-size: 16px;
+  background-color: palegoldenrod;
+  text-align: left;
+  width: fit-content;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.file {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: left;
+}
+.fileFolderList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
